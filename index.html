@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Портфолио — Антон Баженов</title>
+  <meta name="description" content="Портфолио Антона Баженова: финансы, интерьерные решения, хобби." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="bg">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+    <div class="noise"></div>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="На главную">
+      <span class="brandDot"></span>
+      <span>Антон Баженов</span>
+    </a>
+
+    <nav class="nav">
+      <a href="#projects" class="navLink">Проекты</a>
+      <a href="#contacts" class="navLink">Контакты</a>
+      <button class="themeBtn" id="themeBtn" type="button" aria-label="Переключить тему">
+        <span class="themeIcon" aria-hidden="true">◐</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="top" class="container">
+    <section class="hero reveal">
+      <div class="heroLeft">
+        <div class="pill">Портфолио • garantkharkov.net.ua</div>
+        <h1>Портфолио<br><span class="muted">Антон Баженов</span></h1>
+        <p class="lead">
+          Финансы, интерьерные решения и хобби — аккуратно, современно, без “сайта из 2000-х”.
+        </p>
+
+        <div class="ctaRow">
+          <a class="btn primary" href="#projects">Смотреть вкладки</a>
+          <a class="btn ghost" href="#contacts">Связаться</a>
+        </div>
+
+        <div class="stats">
+          <div class="statCard">
+            <div class="statNum">10+</div>
+            <div class="statLabel">лет опыта</div>
+          </div>
+          <div class="statCard">
+            <div class="statNum">25+</div>
+            <div class="statLabel">проектов</div>
+          </div>
+          <div class="statCard">
+            <div class="statNum">100%</div>
+            <div class="statLabel">внимание к деталям</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="heroRight reveal">
+        <div class="profileCard">
+          <div class="avatar" aria-hidden="true">
+            <span>AB</span>
+          </div>
+          <div class="profileText">
+            <div class="profileName">Антон Баженов</div>
+            <div class="profileRole">Финансы • Интерьеры • Проекты</div>
+            <div class="chips">
+              <span class="chip">Excel</span>
+              <span class="chip">Аналитика</span>
+              <span class="chip">Дизайн</span>
+              <span class="chip">Проект-менеджмент</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="quoteCard reveal">
+          <div class="quoteMark" aria-hidden="true">“</div>
+          <p>Делаю вещи так, чтобы они выглядели просто — потому что за простотой стоит работа.</p>
+          <div class="quoteBy">— Антон</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <div class="sectionHead">
+        <h2>Вкладки</h2>
+        <p class="sub">Три направления: финансы, интерьерные решения, хобби.</p>
+      </div>
+
+      <div class="tabs">
+        <div class="tabBar" role="tablist" aria-label="Разделы портфолио">
+          <button class="tabBtn isActive" role="tab" aria-selected="true" aria-controls="tab-fin" id="tabBtn-fin" data-tab="fin" type="button">
+            Опыт в финансах
+          </button>
+          <button class="tabBtn" role="tab" aria-selected="false" aria-controls="tab-int" id="tabBtn-int" data-tab="int" type="button">
+            Интерьерные решения
+          </button>
+          <button class="tabBtn" role="tab" aria-selected="false" aria-controls="tab-hob" id="tabBtn-hob" data-tab="hob" type="button">
+            Хобби
+          </button>
+          <div class="tabIndicator" id="tabIndicator" aria-hidden="true"></div>
+        </div>
+
+        <div class="tabPanels">
+          <!-- FINANCE -->
+          <div class="tabPanel isActive" id="tab-fin" role="tabpanel" aria-labelledby="tabBtn-fin">
+            <div class="grid2">
+              <article class="card">
+                <h3>Коротко</h3>
+                <p>
+                  Тут вставь 3–5 предложений: где работал, в чём сила, какие результаты.
+                </p>
+                <ul class="list">
+                  <li>Бюджетирование / P&L</li>
+                  <li>Финансовый анализ</li>
+                  <li>Отчётность, процессы</li>
+                </ul>
+              </article>
+
+              <article class="card">
+                <h3>Ключевые проекты</h3>
+                <div class="miniCards">
+                  <div class="mini">
+                    <div class="miniTitle">Проект #1</div>
+                    <div class="miniText">Автоматизация отчёта / оптимизация процесса / эффект: +X%.</div>
+                  </div>
+                  <div class="mini">
+                    <div class="miniTitle">Проект #2</div>
+                    <div class="miniText">Финмодель / прогноз / решение для бизнеса.</div>
+                  </div>
+                  <div class="mini">
+                    <div class="miniTitle">Проект #3</div>
+                    <div class="miniText">Контроль затрат / аудит / KPI.</div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- INTERIOR -->
+          <div class="tabPanel" id="tab-int" role="tabpanel" aria-labelledby="tabBtn-int">
+            <div class="grid2">
+              <article class="card">
+                <h3>Подход</h3>
+                <p>
+                  Здесь опиши стиль: минимализм/современный/сканди, работа с планировкой, светом,
+                  материалами, бюджетом.
+                </p>
+                <ul class="list">
+                  <li>Планировка и эргономика</li>
+                  <li>Свет, фактуры, материалы</li>
+                  <li>Смета и подбор решений</li>
+                </ul>
+              </article>
+
+              <article class="card">
+                <h3>Примеры работ</h3>
+                <div class="gallery">
+                  <div class="shot">Проект A<br><span class="muted">Кухня-гостиная</span></div>
+                  <div class="shot">Проект B<br><span class="muted">Спальня</span></div>
+                  <div class="shot">Проект C<br><span class="muted">Ванная</span></div>
+                </div>
+                <p class="hint">Позже сюда можно добавить реальные фото/рендеры.</p>
+              </article>
+            </div>
+          </div>
+
+          <!-- HOBBIES -->
+          <div class="tabPanel" id="tab-hob" role="tabpanel" aria-labelledby="tabBtn-hob">
+            <div class="grid2">
+              <article class="card">
+                <h3>Хобби</h3>
+                <p>Например: спорт, путешествия, музыка, авто, фото — что угодно.</p>
+                <div class="chips">
+                  <span class="chip">🏋️ Спорт</span>
+                  <span class="chip">📷 Фото</span>
+                  <span class="chip">🚗 Авто</span>
+                  <span class="chip">🎧 Музыка</span>
+                </div>
+              </article>
+
+              <article class="card">
+                <h3>Почему это важно</h3>
+                <p>
+                  Пара мыслей: дисциплина, вкус, внимание к деталям, умение доводить до результата —
+                  и как это помогает в работе.
+                </p>
+                <div class="callout">
+                  <div class="calloutTitle">Фишка</div>
+                  <div class="calloutText">Сделаем блок “достижения” или мини-таймлайн.</div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="section reveal">
+      <div class="sectionHead">
+        <h2>Контакты</h2>
+        <p class="sub">Коротко и по делу.</p>
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Связаться</h3>
+          <p class="muted">Поменяй ссылки под себя:</p>
+          <div class="contactList">
+            <a class="contactItem" href="tel:+380000000000">📞 +38 (000) 000-00-00</a>
+            <a class="contactItem" href="mailto:anton@example.com">✉️ anton@example.com</a>
+            <a class="contactItem" href="https://t.me/username" target="_blank" rel="noreferrer">💬 Telegram</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Быстрый текст</h3>
+          <p class="muted">Можно вставить короткий pitch для клиентов/работодателей.</p>
+          <div class="copyBox">
+            <code id="pitchText">Привет! Я Антон. Помогаю с финансовыми задачами и проектами, а также создаю интерьерные решения с чувством вкуса и бюджета.</code>
+            <button class="btn small" id="copyBtn" type="button">Скопировать</button>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <span>© <span id="year"></span> Антон Баженов</span>
+        <span class="dot">•</span>
+        <span class="muted">Сделано аккуратно</span>
+      </footer>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
